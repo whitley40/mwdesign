@@ -1,4 +1,333 @@
-/* line 3, C:/MARK/Personal-Work/mark-designs/sass/_main.scss */
+/* line 13, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 23, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 36, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 44, ../sass/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/*  SECTIONS  */
+/* line 2, ../sass/_grid.scss */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+/* line 9, ../sass/_grid.scss */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+
+/* line 14, ../sass/_grid.scss */
+.col:first-child {
+  margin-left: 0;
+}
+
+/*  GROUPING  */
+/* line 18, ../sass/_grid.scss */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+/* line 19, ../sass/_grid.scss */
+.group:after {
+  clear: both;
+}
+
+/* line 20, ../sass/_grid.scss */
+.group {
+  zoom: 1;
+  /* For IE 6/7 */
+}
+
+/*  restrict width  */
+/* line 23, ../sass/_grid.scss */
+.restrict {
+  display: block;
+  margin: 0px auto;
+  max-width: 1000px;
+}
+
+/*  GRID OF TWELVE  */
+/* line 30, ../sass/_grid.scss */
+.large-12 {
+  float: left;
+  width: 100%;
+}
+
+/* line 36, ../sass/_grid.scss */
+.large-11 {
+  float: left;
+  width: 91.63%;
+}
+
+/* line 41, ../sass/_grid.scss */
+.large-10 {
+  float: left;
+  width: 83.3%;
+}
+
+/* line 47, ../sass/_grid.scss */
+.large-9 {
+  float: left;
+  width: 74.97%;
+}
+
+/* line 53, ../sass/_grid.scss */
+.large-8 {
+  float: left;
+  width: 66.64%;
+}
+
+/* line 59, ../sass/_grid.scss */
+.large-7 {
+  float: left;
+  width: 58.31%;
+}
+
+/* line 65, ../sass/_grid.scss */
+.large-6 {
+  float: left;
+  width: 50%;
+}
+
+/* line 71, ../sass/_grid.scss */
+.large-5 {
+  float: left;
+  width: 41.65%;
+}
+
+/* line 77, ../sass/_grid.scss */
+.large-4 {
+  float: left;
+  width: 33.33%;
+}
+
+/* line 82, ../sass/_grid.scss */
+.large-3 {
+  float: left;
+  width: 25%;
+}
+
+/* line 88, ../sass/_grid.scss */
+.large-2 {
+  float: left;
+  width: 16.66%;
+}
+
+/* line 94, ../sass/_grid.scss */
+.large-1 {
+  float: left;
+  width: 8.33%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 104, ../sass/_grid.scss */
+  .medium-12 {
+    float: left;
+    width: 100%;
+  }
+
+  /* line 110, ../sass/_grid.scss */
+  .medium-11 {
+    float: left;
+    width: 91.63%;
+  }
+
+  /* line 115, ../sass/_grid.scss */
+  .medium-10 {
+    float: left;
+    width: 83.3%;
+  }
+
+  /* line 121, ../sass/_grid.scss */
+  .medium-9 {
+    float: left;
+    width: 74.97%;
+  }
+
+  /* line 127, ../sass/_grid.scss */
+  .medium-8 {
+    float: left;
+    width: 66.64%;
+  }
+
+  /* line 133, ../sass/_grid.scss */
+  .medium-7 {
+    float: left;
+    width: 58.31%;
+  }
+
+  /* line 139, ../sass/_grid.scss */
+  .medium-6 {
+    float: left;
+    width: 50%;
+  }
+
+  /* line 145, ../sass/_grid.scss */
+  .medium-5 {
+    float: left;
+    width: 41.65%;
+  }
+
+  /* line 151, ../sass/_grid.scss */
+  .medium-4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  /* line 156, ../sass/_grid.scss */
+  .medium-3 {
+    float: left;
+    width: 25%;
+  }
+
+  /* line 162, ../sass/_grid.scss */
+  .medium-2 {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* line 168, ../sass/_grid.scss */
+  .medium-1 {
+    float: left;
+    width: 8.33%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 175, ../sass/_grid.scss */
+  .small-12 {
+    float: left;
+    width: 100%;
+  }
+
+  /* line 181, ../sass/_grid.scss */
+  .small-11 {
+    float: left;
+    width: 91.63%;
+  }
+
+  /* line 186, ../sass/_grid.scss */
+  .small-10 {
+    float: left;
+    width: 83.3%;
+  }
+
+  /* line 192, ../sass/_grid.scss */
+  .small-9 {
+    float: left;
+    width: 74.97%;
+  }
+
+  /* line 198, ../sass/_grid.scss */
+  .small-8 {
+    float: left;
+    width: 66.64%;
+  }
+
+  /* line 204, ../sass/_grid.scss */
+  .small-7 {
+    float: left;
+    width: 58.31%;
+  }
+
+  /* line 210, ../sass/_grid.scss */
+  .small-6 {
+    float: left;
+    width: 50%;
+  }
+
+  /* line 216, ../sass/_grid.scss */
+  .small-5 {
+    float: left;
+    width: 41.65%;
+  }
+
+  /* line 222, ../sass/_grid.scss */
+  .small-4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  /* line 227, ../sass/_grid.scss */
+  .small-3 {
+    float: left;
+    width: 25%;
+  }
+
+  /* line 233, ../sass/_grid.scss */
+  .small-2 {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* line 239, ../sass/_grid.scss */
+  .small-1 {
+    float: left;
+    width: 8.33%;
+  }
+}
+/* line 3, ../sass/_main.scss */
 a {
   box-sizing: border-box;
 }
