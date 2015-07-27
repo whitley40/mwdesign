@@ -46,16 +46,24 @@ module.exports = function(grunt){
 				files: ['src/sass/*.scss'],
 				tasks: ['sass:dev']
 			}
-		}
+		},
+		autoprefixer: {
+            dev: {
+                files: {
+                    'css/styles.css': 'css/styles.css'
+                }
+            }
+        }
 	});
 
 	//Load the plugins
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-sass');
+	grunt.loadNpmTasks('grunt-autoprefixer');
 
 	//Register tasks
-	grunt.registerTask('default',['uglify:dev','sass:dev']);
+	grunt.registerTask('default',['uglify:dev','sass:dev','autoprefixer:dev']);
 	grunt.registerTask('build',['uglify:build', 'sass:build']);
 
 };
